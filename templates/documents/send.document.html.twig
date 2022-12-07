@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Send Document{% endblock %}
+
+{% block body %}
+    <h1>Register</h1>
+
+    {{ form_start(documentForm) }}
+
+        <label for="myfile">Select a file:</label>
+
+        {{ form_row(documentForm.file) }}
+
+        <button type="submit" class="btn">upload</button>
+    {{ form_end(documentForm) }}
+{% endblock %}
